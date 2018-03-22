@@ -51,7 +51,7 @@ class Tasks extends XML_Model {
     public function rules()
     {
         $config = array(
-            ['field' => 'name', 'label' => 'TODO task', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
+            ['field' => 'task', 'label' => 'TODO task', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
             ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
             ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
             ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],

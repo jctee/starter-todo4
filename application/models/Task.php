@@ -7,7 +7,7 @@ class Task extends Entity {
     /**
      * Evaluates and sets the Task property
      */
-    private $name;
+    private $task;
     private $priority;
     private $size;
     private $group;
@@ -19,7 +19,7 @@ class Task extends Entity {
         if (strlen($value) > 64) {
             throw new Exception('String is too long');
         }
-        $this->name = $value;
+        $this->task = $value;
     }
     /**
      * Evaluates and sets the Priority property
@@ -61,7 +61,7 @@ class Task extends Entity {
         $this->group = $value;
     }
     public function getTask() {
-        return $this->name;
+        return $this->task;
     }
     public function getPriority() {
         return $this->priority;
