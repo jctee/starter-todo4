@@ -9,7 +9,7 @@
         {display_tasks}
         <tr>
             <td>{id}</td>
-            <td>{name}</td>
+            <td>{task}</td>
         <td>{group}</td>
         </tr>
         {/display_tasks}

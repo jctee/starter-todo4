@@ -1,5 +1,5 @@
 <tr>
         <td>{id}</td>
-        <td>{name}</td>
+        <td>{task}</td>
         <td>{status}</td>
 </tr>
